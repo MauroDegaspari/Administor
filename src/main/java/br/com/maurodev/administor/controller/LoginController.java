@@ -8,7 +8,7 @@ public class LoginController {
 	
 
 	@RequestMapping("/login")
-	public String login(){
+	public String loginForm(){
 		
 		
 		return"/pages/LoginCadastro/login";
