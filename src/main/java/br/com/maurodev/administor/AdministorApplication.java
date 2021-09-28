@@ -8,6 +8,7 @@ public class AdministorApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(AdministorApplication.class, args);
+
 	}
 
 }
