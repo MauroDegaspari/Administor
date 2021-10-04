@@ -21,8 +21,10 @@ public class CondominioModel {
 
 	@Column(name="sindico")
 	private String sindico;
+	
 	@Column(name="CONDOMINIIO")
 	private String condominio;
+	
 	@Column(name="senha")
 	private String senha;
 	
