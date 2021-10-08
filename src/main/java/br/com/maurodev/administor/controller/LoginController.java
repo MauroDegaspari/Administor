@@ -12,6 +12,9 @@ public class LoginController {
 	public String loginForm(){
 		return"/pages/LoginCadastro/login";
 	}	
-	
+	@RequestMapping("/")
+	public String index(){
+		return"/pages/index";
+	}
 	
 }
