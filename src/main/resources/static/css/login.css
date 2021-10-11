@@ -24,6 +24,17 @@
 
 }
 
+#blocoreuniao{
+	padding-top: 40px;
+	margin:15px;
+	border-radius: 20px;
+	justify-content:flex;
+	
+	width:45%;
+	height:500px;
+
+}
+
 #login{
 	
 	margin-top:20px;
