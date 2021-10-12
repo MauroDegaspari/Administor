@@ -1,5 +1,9 @@
 package br.com.maurodev.administor.repository;
 
-public class ReuniaoRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import br.com.maurodev.administor.model.ReuniaoModel;
+
+public interface ReuniaoRepository extends JpaRepository<ReuniaoModel, Long>{
 
 }
