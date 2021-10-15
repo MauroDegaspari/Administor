@@ -48,7 +48,7 @@
 			</thead>
 				<tbody>	
 			<tr th:each="RC: ${reuniaoHtml}"> 				
-				<td><span th:text="${RC.nome}"></span></td>
+				<td><a th:href="${(#mvc.url('RAC#reuniaoDetalhe').arg(0, RC.id)).build()}"><span th:text="${RC.nome}"></span></a></td>
 				<td><span th:text="${RC.local}"></span></td><!-- tag span sempre para acessar um objeto -->
 				<td><span th:text="${RC.data}"></span></td><!-- tag span sempre para acessar um objeto -->
 				<td><span th:text="${RC.horario}"></span></td><!-- tag span sempre para acessar um objeto -->

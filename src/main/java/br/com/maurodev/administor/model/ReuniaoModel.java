@@ -19,7 +19,7 @@ public class ReuniaoModel {
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQ_CONDOMINIO")
 	@Column(name="id_reuniao")
-	private Long id;
+	private long id;
 	
 	@Column(name="nome")
 	private String nome;
@@ -44,12 +44,12 @@ public class ReuniaoModel {
 	}
 
 	//Gettes & Settes
-	public Long getId() {
+	public long getId() {
 		return id;
 	}
 
 
-	public void setId(Long id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 

@@ -22,4 +22,44 @@ public class ParticipanteModel {
 	
 	@ManyToOne
 	private ReuniaoModel reuniao;
+	
+	public ParticipanteModel() {
+	  }
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getCelular() {
+		return celular;
+	}
+
+	public void setCelular(String celular) {
+		this.celular = celular;
+	}
+
+	public ReuniaoModel getReuniao() {
+		return reuniao;
+	}
+
+	public void setReuniao(ReuniaoModel reuniao) {
+		this.reuniao = reuniao;
+	}
+
+	
+	
 }
+
+ 
