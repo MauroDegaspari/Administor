@@ -7,7 +7,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
@@ -16,6 +15,7 @@ import javax.persistence.Table;
 @Table(name="reuniao")
 @SequenceGenerator(name= "SEQ_REUNIAO", sequenceName ="SEQ_REUNIAO", initialValue = 1, allocationSize = 1)
 public class ReuniaoModel {
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQ_CONDOMINIO")
 	@Column(name="id_reuniao")
@@ -33,8 +33,7 @@ public class ReuniaoModel {
 	@Column(name="horario")
 	private String horario;
 	
-	@OneToMany
-	@JoinColumn(name ="id_reuniao")
+	@OneToMany(mappedBy = "reuniao")
 	private List<ParticipanteModel> participante;
 	
 	

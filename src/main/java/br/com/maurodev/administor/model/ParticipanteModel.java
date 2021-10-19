@@ -1,9 +1,11 @@
 package br.com.maurodev.administor.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
@@ -15,12 +17,14 @@ public class ParticipanteModel {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQ_PARTICIPANTE")
+	@Column(name="ID_PARTICIPANTE")
 	private Long id;
 	
 	private String nome;
 	private String celular;
 	
 	@ManyToOne
+	@JoinColumn(name ="id_reuniao")
 	private ReuniaoModel reuniao;
 	
 	public ParticipanteModel() {
