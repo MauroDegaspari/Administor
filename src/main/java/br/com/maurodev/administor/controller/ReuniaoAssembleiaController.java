@@ -49,12 +49,15 @@ public class ReuniaoAssembleiaController {
 		ReuniaoModel reuniao = rr.findById(id);
 		ModelAndView mv = new ModelAndView("/pages/ReuniaoAssembleia/ReuniaoDetalhes");
 		mv.addObject("detalheHtml", reuniao);
+		
+		List<ParticipanteModel> participante = pr.findByReuniao(reuniao);
+		mv.addObject("participanteHtml", participante);
 		return mv;
 	}
 	
 
 	@RequestMapping(value="/{id}", method = RequestMethod.POST) //redirecionamento pro id de cada evento
-	public String detalheNotaPost(@PathVariable("id") long id, ParticipanteModel participante) {
+	public String reuniaoDetalhePost(@PathVariable("id") long id, ParticipanteModel participante) {
 		ReuniaoModel reuniao = rr.findById(id);
 		participante.setReuniao(reuniao);
 		pr.save(participante);
