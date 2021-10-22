@@ -16,9 +16,23 @@
 	<title>Cadastro Reunião</title>
 </head>
 <body>
-<form  class="container" method="post">
+
+	<nav>
+		    <div class="nav-wrapper blue-grey darken-2">
+		      <a href="#" class="brand-logo">Administor</a>
+		      <ul id="nav-mobile" class="right hide-on-med-and-down">
+		        <li><a href="/reuniaoAssembleia">Volta</a></li>
+		      </ul>
+		    </div>
+  		</nav>
+
+ <div id="blocoindex" class="container z-depth-5">
+
+	<h3 align="center" style="padding-top:20px;">Cadastro de Reunião</h3>
+
+	<form  class="container" method="post">
 			<div class="row">
-				Nome: <input type="text" value="" name="nome"/>
+				Tema: <input type="text" value="" name="nome"/>
 				
 				<div class="input-field col s6">
 					Local: <input type="text" value="" name="local"/>
@@ -30,10 +44,52 @@
 				<div class="input-field col s3">	
 					Horas: <input type="text" value="" name="horario"/>
 				</div>
+				
+				<div class="row">
+        		  <div class="input-field col s12">
+         		    <textarea id="textarea1" class="materialize-textarea"></textarea>
+         			<label for="textarea1">Assunto da Reunião</label>
+       			  </div>
+     		   </div>
+				
+				
+				
 				<button class="waves-effect deep-purple darken-4 btn" type="submit"> salvar</button>
+				
 			</div>
 		</form>
-		
+	</div>
+	
+	  <footer class="page-footer nav-wrapper blue-grey darken-2" id="footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Desenvolvedor Mauro Degaspari</h5>
+                <p class="grey-text text-lighten-4">Este é um Projeto realizado em prol 
+                									do meu conhecimento e prazer que tenho
+                									com o desenvolvimento.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="https://github.com/MauroDegaspari">Meu GitHub</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Meu Linkedin</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2021 Copyright Mauro Degaspari
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
+	
+	
+	
 		
 		
 		 <!--JavaScript at end of body for optimized loading-->
