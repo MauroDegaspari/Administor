@@ -21,6 +21,8 @@
 	
 	width:60%;
 	height:500px;
+	
+	align-items: rigth;
 
 }
 
@@ -52,4 +54,8 @@
 #footer{
 	
 	margin-top: 50px;
+}
+
+#icons{
+  
 }
