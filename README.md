@@ -3,7 +3,7 @@
 [![NPM](https://img.shields.io/badge/license-MIT-brightgreen)](https://github.com/MauroDegaspari/Contacttura/blob/master/LICENSE)
 
 ## Objetivo
-Gestão de Condominio! administração feita pelo sindico e acompanhada pelos moradoes
+Gestão de Condominio! administração feita pelo sindico e acompanhada pelos moradoes<br> 
 <strong>Administor</strong>.<br> 
 O projeto é um administrador de predidos onde é possivel criar Reuniões, Assembleias e que permite adicioná-los e removê-los.
 
