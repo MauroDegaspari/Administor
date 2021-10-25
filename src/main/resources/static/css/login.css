@@ -18,11 +18,13 @@
 	margin-top: 80px;
 	border-radius: 20px;
 	justify-content:center;
+	display: block;
+	text-align: center;
 	
 	width:60%;
 	height:500px;
 	
-	align-items: rigth;
+	
 
 }
 
@@ -57,5 +59,10 @@
 }
 
 #icons{
-  
+	
+    align-items: center;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
 }
